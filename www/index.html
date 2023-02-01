@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="media/LOGO.png" alt="logo">
+            <h1 class="logotitle">VAULT</h1>
+            <hr>
+            <h3 class="titulo">Bienvenido al gestor de contraseñas</h3>
+            <input class="textbox" id="searchsite" type="text" placeholder="Escribe un nombre...">
+        </header>
+        <div class="content">
+            <div class="sidetab">
+                <div class="filters">
+                    <input class="textbox" id="searchcategory" style="width:100%;" type="text" placeholder="Buscar por categoría">
+                    <div class="addcontainer">
+                        <button id="createcategory" class="btn"> <i class="bi bi-plus"></i> New Category </button>
+                        <button id="createsite" class="btn"> <i class="bi bi-plus"></i> New Site </button>
+                    </div>
+                </div>
+                <div class="categorycontainer" id="categorycontainer">
+                    
+                </div>
+            </div>
+            
+            <div class="sitetablecontainer">
+                <table>
+                    <tr>
+                        <th class="tabletitle"><h4>Sitio</h4></th>
+                        <th class="tabletitle"><h4>Usuario</h4></th>
+                        <th class="tabletitle"><h4>Contraseña</h4></th>
+                        <th class="tabletitle"><h4>Fecha de creación</h4></th>
+                        <th class="tabletitle"><h4>Acciones</h4></th>
+                    </tr>
+                    <tbody id="categorytable">
+                    <!--
+                    <tr>
+                        <td class="tablecolumn"><span>Google</span></td>
+                        <td class="tablecolumn"><span>Mysamples</span></td>
+                        <td class="tablecolumn"><span>*********</span></td>
+                        <td class="tablecolumn"><span>10/10/2020</span></td>
+                        <td class="tablecolumn">
+                            <div class="tableicons">
+                                <i class="bi bi-archive-fill"></i>
+                                <i class="bi bi-x-circle-fill"></i>
+                                <i class="bi bi-pencil-fill"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="module" src="./js/index.js"></script>
+</html>
